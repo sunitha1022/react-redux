@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-16T16:55:30.994Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="PpPnbkZb9zrFzwUjjA47" version="14.2.9" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-02-16T17:00:45.951Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="KG-iK8j4OrsENtzacJrd" version="14.2.9" type="github" pages="2">
   <diagram id="ZJx_JwRwRRRoq5HQrWEe" name="Page-1">
     <mxGraphModel dx="706" dy="313" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -33,8 +33,8 @@
       <root>
         <mxCell id="HXBI2x8wdJTFYBN5y6wc-0" />
         <mxCell id="HXBI2x8wdJTFYBN5y6wc-1" parent="HXBI2x8wdJTFYBN5y6wc-0" />
-        <mxCell id="HXBI2x8wdJTFYBN5y6wc-2" value="// index.jsimport React from &#39;react&#39;import ReactDOM from &#39;react-dom&#39;import TodoApp from &#39;./TodoApp&#39;import { Provider } from &#39;react-redux&#39;import store from &#39;./redux/store&#39;const rootElement = document.getElementById(&#39;root&#39;)ReactDOM.render(  &lt;Provider store={store}&gt;    &lt;TodoApp /&gt;  &lt;/Provider&gt;,  rootElement)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="HXBI2x8wdJTFYBN5y6wc-1">
-          <mxGeometry x="190" y="90" width="550" height="60" as="geometry" />
+        <mxCell id="HXBI2x8wdJTFYBN5y6wc-3" value="&lt;b&gt;const mapStateToProps = (state, ownProps) =&amp;gt; ({  // ... computed data from state and optionally ownProps})&lt;br&gt;&lt;br&gt;&lt;br&gt;const mapDispatchToProps = {&lt;br&gt;&amp;nbsp;// ... normally is an object full of action creators&lt;br&gt;&lt;br&gt;}&lt;br&gt;&lt;/b&gt;&lt;br&gt;// `connect` returns a new function that accepts the component to wrap:&lt;br&gt;&lt;br&gt;&lt;b&gt;const connectToStore = connect(  mapStateToProps,&lt;br&gt;&amp;nbsp;mapDispatchToProps)&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;// and that function returns the connected, wrapper component:&lt;br&gt;const ConnectedComponent = connectToStore(Component)&lt;br&gt;// We normally do both in one step, like this:&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;connect(  mapStateToProps,  mapDispatchToProps)(Component)&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="HXBI2x8wdJTFYBN5y6wc-1">
+          <mxGeometry x="150" y="100" width="550" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

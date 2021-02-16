@@ -1,1 +1,42 @@
-<mxfile host="app.diagrams.net" modified="2021-02-16T16:02:07.841Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" version="14.2.9" etag="yTrOcoxVtxFFYafbUtu7" type="github"><diagram id="ZJx_JwRwRRRoq5HQrWEe">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-02-16T16:55:30.994Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="PpPnbkZb9zrFzwUjjA47" version="14.2.9" type="github" pages="2">
+  <diagram id="ZJx_JwRwRRRoq5HQrWEe" name="Page-1">
+    <mxGraphModel dx="706" dy="313" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3AF9C_CZbLRe6nph6lKN-1" value="We need to make the store available to our app.&lt;br&gt;&amp;nbsp;We wrap the app with the&amp;lt;provider/&amp;gt;&lt;br&gt;&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="165" y="90" width="270" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3AF9C_CZbLRe6nph6lKN-2" value="Connect the components: React redux provides a connect function for you to read values from the redux store and re read when the store updates" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="165" y="170" width="265" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3AF9C_CZbLRe6nph6lKN-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3AF9C_CZbLRe6nph6lKN-4" value="The connect function takes two arguments&lt;br&gt;1. mapStateToProps 2.mapDispatchToProps (both are optional)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="270" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3AF9C_CZbLRe6nph6lKN-5" value="mapStateToProps:Called every time when the store state changes.It receives the entire store and should return an object of data this component needs" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="350" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3AF9C_CZbLRe6nph6lKN-6" value="mapDispatchToProps:this parameter cab either be a function or an object.If its a function,it will be called once on component creation" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="430" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3AF9C_CZbLRe6nph6lKN-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="165" y="510" width="265" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="vFGWsXocCeIQ4heOeYqM" name="Page-2">
+    <mxGraphModel dx="706" dy="313" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="HXBI2x8wdJTFYBN5y6wc-0" />
+        <mxCell id="HXBI2x8wdJTFYBN5y6wc-1" parent="HXBI2x8wdJTFYBN5y6wc-0" />
+        <mxCell id="HXBI2x8wdJTFYBN5y6wc-2" value="// index.jsimport React from &#39;react&#39;import ReactDOM from &#39;react-dom&#39;import TodoApp from &#39;./TodoApp&#39;import { Provider } from &#39;react-redux&#39;import store from &#39;./redux/store&#39;const rootElement = document.getElementById(&#39;root&#39;)ReactDOM.render(  &lt;Provider store={store}&gt;    &lt;TodoApp /&gt;  &lt;/Provider&gt;,  rootElement)" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="HXBI2x8wdJTFYBN5y6wc-1">
+          <mxGeometry x="190" y="90" width="550" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
